@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Summer Camp</title>
+    <link rel="stylesheet" href="css/apply.css">
+    <link rel="stylesheet" href="css/site-effects.css">
+     <link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-32x32.png">
+    
+</head>
+<body>
+    <header>
+        
+        <img src="brand/london camp.jpg" alt="" width="auto" height="75px">
+
+    <div class="titulli">
+    <h2>London Summer Camp</h2>
+    </div>
+     <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    <nav>
+      <div id="Home">
+      </div>
+      <div id="About">
+      </div>
+      <div id="Activities">
+      </div>
+      <div id="Schedule">
+      </div>
+      <div id="Gallery"> 
+      </div>
+     
+    
+       <div class="teksti" id="Makarone">
+
+
+      <a href="index.html" >Home</a>
+      <a href="about.html" >About</a>
+      <a href="activities.html" >Activities</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="apply.html" class="apply-now">Apply Now</a>
+      </div>
+    </nav>
+    </header>
+
+    <main class="apply-page">
+        <section class="apply-hero">
+            <div>
+                <p class="apply-label">Reserve a place</p>
+                <h1>Apply Now</h1>
+                <p>Parents can contact London School administration to reserve a place for their child at London Summer Camp.</p>
+            </div>
+            <div class="apply-contact">
+                <h2>Administration Contact</h2>
+                <div class="apply-contact-list">
+                    <div class="apply-contact-item">
+                        <img src="icons/icons8-phone-50 (1).png" alt="">
+                        <div>
+                            <span>Phone</span>
+                            <p>+045 224 876</p>
+                        </div>
+                    </div>
+
+                    <div class="apply-contact-item">
+                        <img src="icons/icons8-email-48.png" alt="">
+                        <div>
+                            <span>Email</span>
+                            <p>londonschoolsummercamp@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="apply-contact-item">
+                        <img src="icons/icons8-location-48.png" alt="">
+                        <div>
+                            <span>Location</span>
+                            <p>London School, Mitrovica</p>
+                            <p>Rruga Mbreteresha Teuta, 40000 Mitrovica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation-section">
+            <div class="reservation-info">
+                <h2>Reservation Request</h2>
+                <p>Send the parent details, child name, and a short message so the administration team can confirm availability and next steps.</p>
+                <div class="reservation-note">
+                    <strong>Places are limited</strong>
+                    <p>The administration team will contact parents to confirm the reservation and share payment or preparation details.</p>
+
+                </div>
+            </div>
+
+
+
+            <form
+                class="reservation-form"
+                id="form"
+                action="https://formsubmit.co/londonschoolsummercamp@gmail.com"
+                method="POST"
+                autocomplete="off"
+            >
+    <input
+        type="hidden"
+        name="_subject"
+        value="New London School Summer Camp Reservation Request"
+    >
+
+    <input
+        type="hidden"
+        name="_template"
+        value="table"
+    >
+
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+    >
+
+    <input
+        type="hidden"
+        name="reservationId"
+        id="reservationId"
+    >
+
+    <input
+        type="hidden"
+        name="submittedAt"
+        id="submittedAt"
+    >
+        
+
+    <label>
+        Parent Name
+        <input type="text" id="name" name="parentName" placeholder="Name" autocomplete="off" required>
+    </label>
+
+    <label>
+        Phone
+        <input type="tel" id="phone" name="phone" placeholder="+383..." autocomplete="off" required>
+    </label>
+
+    <label>
+        Email
+        <input type="email" id="email" name="email" placeholder="email@example.com" autocomplete="off" required>
+    </label>
+
+    <label>
+        Child Name
+        <input type="text" id="childname" name="childName" placeholder="Child name" autocomplete="off" required>
+    </label>
+
+    <label>
+        Child Age
+        <input type="number" name="childAge" id="childAge" min="5" max="12" step="1" placeholder="Child age" autocomplete="off" required>
+    </label>
+
+    <label class="full-field">
+        Message / Reservation Request / Allergies
+        <textarea id="message" name="message" rows="6" placeholder="Message / Reservation Request / Allergies" autocomplete="off" required></textarea>
+    </label>
+
+    <button type="submit">Send Reservation Request</button>
+
+</form>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>London Summer Camp</h3>
+            <p>Creating unforgettable summer experiences for children through learning, adventure, and fun.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="apply.html">Apply Now</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>Phone: 045 224 876</p>
+            <p>Email: londonschoolsummercamp@gmail.com</p>
+            <p>London School, Mitrovica</p>
+            <p>Rruga Mbreteresha Teuta, 40000 Mitrovica</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <a href="https://www.instagram.com/londonsummercamp" target="_blank"><img src="icons/icons8-instagram-logo-94.png" alt="" width="30px" height="30px">Instagram</a>
+            <a href="https://www.londonschool-ks.com/ " target="_blank">London School Website</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright 2026 London Summer Camp. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="js/apply.js?v=separate-reservation-email-1"></script>
+<script src="js/app.js"></script>
+<script src="js/site-effects.js"></script>
+<script src="js/language.js"></script>
+</body>
+</html>

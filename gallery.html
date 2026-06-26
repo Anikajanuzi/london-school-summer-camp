@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Summer Camp</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/site-effects.css">
+     <link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-32x32.png">
+    
+</head>
+<body>
+     <header>
+        
+        <img src="brand/london camp.jpg" alt="" width="auto" height="75px">
+
+    <div class="titulli">
+    <h2>London Summer Camp</h2>
+    </div>
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    <nav>
+      <div id="Home">
+      </div>
+      <div id="About">
+      </div>
+      <div id="Activities">
+      </div>
+      <div id="Schedule">
+      </div>
+      <div id="Gallery"> 
+      </div>
+     
+    
+       <div class="teksti" id="Makarone">
+
+
+       <a href="index.html" >Home</a>
+      <a href="about.html" >About</a>
+      <a href="activities.html" >Activities</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="apply.html" class="apply-now">Apply Now</a>
+      </div>
+    </nav>
+     </header>
+
+     <main class="gallery-main">
+        <section class="gallery-intro">
+            <p>@londonsummercamp</p>
+            <h1>Camp Gallery</h1>
+        </section>
+
+        <section class="gallery-grid">
+
+  <div class="year-card" onclick="openGallery('2026')">
+      <img src="2026/WhatsApp Image 2026-06-09 at 23.24.03.jpeg" alt="" width="250px">
+      <h2>2026</h2>
+  </div>
+
+  <div class="year-card" onclick="openGallery('2025')">
+      <img src="2025/WhatsApp Image 2026-06-10 at 15.39.35.jpeg" alt="" width="250px">
+      <h2>2025</h2>
+  </div>
+
+  <div class="year-card" onclick="openGallery('2024')">
+      <img src="2024/WhatsApp Image 2026-06-10 at 00.57.21.jpeg" alt="">
+      <h2>2024</h2>
+  </div>
+
+  <div class="year-card" onclick="openGallery('2023')">
+      <img src="2023/fotott.jpeg" alt="">
+      <h2>2023</h2>
+  </div>
+
+  <div class="year-card" onclick="openGallery('2022')">
+      <img src="2022/WhatsApp Image 2026-06-10 at 22.39.52.jpeg" alt="">
+      <h2>2022</h2>
+  </div>
+
+  <div class="year-card" onclick="openGallery('2021')">
+      <img src="2021/WhatsApp Image 2026-06-10 at 23.12.02 (1).jpeg" alt="">
+      <h2>2021</h2>
+  </div>
+
+  <div class="year-card" onclick="openGallery('2020')">
+      <img src="2020/WhatsApp Image 2026-06-10 at 23.28.11.jpeg" alt="">
+      <h2>2020</h2>
+  </div>
+
+  <div class="year-card" onclick="openGallery('2019')">
+      <img src="2019/WhatsApp Image 2026-06-10 at 23.41.09 (5).jpeg" alt="">
+      <h2>2019</h2>
+  </div>
+
+</section>
+        </section>
+     </main>
+
+     <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+        <button type="button" class="lightbox-close" aria-label="Close photo preview">&times;</button>
+        <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photo">&#10094;</button>
+        <div class="lightbox-content">
+            <img alt="" id="lightboxImage">
+            <p id="lightboxCaption"></p>
+        </div>
+        <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photo">&#10095;</button>
+     </div>
+
+     <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>London Summer Camp</h3>
+            <p>Creating unforgettable summer experiences for children through learning, adventure, and fun.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="activities.html">Activities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="apply.html">Apply Now</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+            <p>Phone: +045 224 876</p>
+            <p>Email: londonschoolsummercamp@gmail.com</p>
+            <p>London School, Mitrovica</p>
+            <p>Rruga Mbreteresha Teuta, 40000 Mitrovica</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <a href="https://www.instagram.com/londonsummercamp" target="_blank"><img src="icons/icons8-instagram-logo-94.png" alt="" width="30px" height="30px">Instagram</a>
+            <a href="https://www.londonschool-ks.com/ " target="_blank">London School Website</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright 2026 London Summer Camp. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="js/gallery.js"></script>
+<script src="js/app.js"></script>
+<script src="js/site-effects.js"></script>
+<script src="js/language.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "aksa-uerda-ldn-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for London Summer Camp.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check:links": "node check-static-links.js"
+  },
+  "keywords": [
+    "summer-camp",
+    "static-site",
+    "vercel"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
