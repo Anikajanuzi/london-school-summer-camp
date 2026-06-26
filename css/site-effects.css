@@ -1,0 +1,709 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe,
+svg {
+  max-width: 100%;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  min-width: 0;
+}
+
+button,
+a,
+.year-card,
+.staff-card,
+.schedule-card,
+.gallery-card,
+.apply-contact-item,
+.reservation-section,
+.hello,
+.staff,
+.star,
+.aritje,
+.team,
+.meals,
+.outodor,
+.beach,
+.Sports,
+.card,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.instagram-card,
+.stat-card,
+.timeline-item,
+.safety-card {
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    border-color 0.28s ease,
+    background-color 0.28s ease,
+    color 0.28s ease;
+}
+
+button:hover,
+.apply-now:hover,
+.watch-btn:hover,
+.learn-more-btn:hover,
+.hero-button:hover,
+.location-map-button:hover,
+.reservation-form button:hover,
+.instagram-link:hover,
+.text-link:hover {
+  transform: translateY(-2px);
+}
+
+.year-card:hover,
+.gallery-card:hover,
+.staff-card:hover,
+.schedule-card:hover,
+.apply-contact-item:hover,
+.hello:hover,
+.staff:hover,
+.star:hover,
+.aritje:hover,
+.team:hover,
+.meals:hover,
+.outodor:hover,
+.beach:hover,
+.Sports:hover,
+.instagram-card:hover,
+.stat-card:hover,
+.timeline-item:hover,
+.safety-card:hover {
+  transform: translateY(-6px);
+}
+
+.gallery-card,
+.year-card,
+.staff-card,
+.card,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8 {
+  overflow: hidden;
+}
+
+.gallery-card img,
+.year-card img,
+.staff-card img,
+.jale img,
+.card img,
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img,
+.card5 img,
+.card6 img,
+.card7 img,
+.card8 img,
+.experience-image img,
+.video-card video {
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.gallery-card:hover img,
+.year-card:hover img,
+.staff-card:hover img,
+.jale img:hover,
+.card:hover img,
+.card1:hover img,
+.card2:hover img,
+.card3:hover img,
+.card4:hover img,
+.card5:hover img,
+.card6:hover img,
+.card7:hover img,
+.card8:hover img,
+.experience-image:hover img,
+.video-card:hover video {
+  transform: scale(1.035);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #ffb400;
+  outline-offset: 4px;
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.language-option {
+  border: 1.5px solid rgba(22, 35, 101, 0.22);
+  background: transparent;
+  color: #162365;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.language-option:hover,
+.language-option.is-active {
+  background: #162365;
+  border-color: #162365;
+  color: #ffffff;
+}
+
+.site-effects-ready .site-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: opacity 0.72s ease, transform 0.72s ease;
+}
+
+.site-effects-ready .site-reveal--fade {
+  transform: translateY(0);
+}
+
+.site-effects-ready .site-reveal--up {
+  transform: translateY(26px);
+}
+
+.site-effects-ready .site-reveal--zoom {
+  transform: translateY(18px) scale(0.97);
+}
+
+.site-effects-ready .site-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Home page navbar stability */
+body:has(.hero-image) header {
+  flex-wrap: nowrap;
+  gap: clamp(12px, 1.8vw, 24px);
+}
+
+body:has(.hero-image) header > img {
+  flex: 0 0 auto;
+}
+
+body:has(.hero-image) .titulli {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+body:has(.hero-image) .titulli h2 {
+  white-space: nowrap;
+}
+
+body:has(.hero-image) nav {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+body:has(.hero-image) #Makarone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+
+body:has(.hero-image) #Makarone a {
+  flex: 0 0 auto;
+  margin: 0 15px;
+  white-space: nowrap;
+}
+
+body:has(.hero-image) nav a.apply-now {
+  padding: 10px 18px;
+  font-size: 16px;
+}
+
+body:has(.hero-image) #Makarone .language-switcher {
+  flex: 0 0 auto;
+  margin-left: 8px;
+}
+
+@media (max-width: 1180px) {
+  body:has(.hero-image) header {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 1180px) {
+  body:has(.hero-image) nav {
+    flex: 0 0 0;
+    width: 0;
+    margin-left: 0;
+  }
+
+  body:has(.hero-image) .menu-toggle {
+    display: block;
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  body:has(.hero-image) #Makarone {
+    display: none;
+  }
+
+  body:has(.hero-image) #Makarone.active {
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0 14px 34px rgba(22, 35, 101, 0.16);
+    backdrop-filter: blur(8px);
+  }
+
+  body:has(.hero-image) #Makarone.active a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px 8px;
+  }
+
+  body:has(.hero-image) #Makarone.active .apply-now {
+    width: max-content;
+    max-width: 100%;
+    padding: 10px 18px;
+    text-align: center;
+  }
+
+  body:has(.hero-image) #Makarone.active .language-switcher {
+    width: 100%;
+    margin: 4px 0 0;
+  }
+
+  body:has(.hero-image) #Makarone.active .language-option {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+/* Home page responsive stability */
+body:has(.hero-image) {
+  width: 100%;
+}
+
+body:has(.hero-image) .hours {
+  width: min(720px, calc(100% - 80px));
+  max-width: calc(100% - 80px);
+}
+
+body:has(.hero-image) .best,
+body:has(.hero-image) .kids,
+body:has(.hero-image) .ps {
+  max-width: 100%;
+}
+
+body:has(.hero-image) .h1 {
+  left: auto !important;
+  width: min(100% - 40px, 1120px);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body:has(.hero-image) .linee,
+body:has(.hero-image) .linee1 {
+  left: 50% !important;
+  max-width: min(300px, 70vw);
+  transform: translateX(-50%);
+}
+
+body:has(.hero-image) .okej {
+  top: auto !important;
+  margin-top: 24px;
+}
+
+/* Activities page responsive stability */
+body:has(.hero-text) > div:first-of-type,
+body:has(.hero-text) .ss {
+  display: block;
+  float: left;
+  width: 50%;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+body:has(.hero-text) > div:first-of-type img,
+body:has(.hero-text) .ss img {
+  display: block;
+  width: 100% !important;
+  height: 560px !important;
+  object-fit: cover;
+}
+
+body:has(.hero-text) .ss {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+body:has(.hero-text) .hero-text {
+  position: relative !important;
+  top: 0 !important;
+  z-index: 1;
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 34px;
+  width: min(1290px, calc(100% - 40px));
+  height: auto !important;
+  margin: 0 auto -410px;
+  text-align: center;
+  transform: translateY(-410px);
+}
+
+body:has(.hero-text) .london,
+body:has(.hero-text) .summer,
+body:has(.hero-text) .tagline,
+body:has(.hero-text) .camp-footer {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+body:has(.hero-text) .tagline {
+  margin-bottom: 72px;
+}
+
+body:has(.hero-text) .card,
+body:has(.hero-text) .card1,
+body:has(.hero-text) .card2,
+body:has(.hero-text) .card3,
+body:has(.hero-text) .card4,
+body:has(.hero-text) .card5,
+body:has(.hero-text) .card6,
+body:has(.hero-text) .card7,
+body:has(.hero-text) .card8 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 620px;
+  margin: 0 !important;
+}
+
+body:has(.hero-text) .overlay h2,
+body:has(.hero-text) .chess h2,
+body:has(.hero-text) .tenda h2,
+body:has(.hero-text) .yoga h2,
+body:has(.hero-text) .picnic h2,
+body:has(.hero-text) .sports h2,
+body:has(.hero-text) .karate h2,
+body:has(.hero-text) .climbing h2,
+body:has(.hero-text) .shigjeta h2 {
+  right: auto !important;
+  text-align: left;
+}
+
+body:has(.hero-text) .overlay,
+body:has(.hero-text) .chess,
+body:has(.hero-text) .tenda,
+body:has(.hero-text) .yoga,
+body:has(.hero-text) .picnic,
+body:has(.hero-text) .sports,
+body:has(.hero-text) .karate,
+body:has(.hero-text) .climbing,
+body:has(.hero-text) .shigjeta {
+  text-align: left;
+}
+
+body:has(.hero-text) .icon,
+body:has(.hero-text) .icon1,
+body:has(.hero-text) .icon2,
+body:has(.hero-text) .icon3,
+body:has(.hero-text) .icon4,
+body:has(.hero-text) .icon5,
+body:has(.hero-text) .icon6,
+body:has(.hero-text) .icon7,
+body:has(.hero-text) .icon8 {
+  top: auto !important;
+  bottom: 205px;
+}
+
+body:has(.hero-text) .camp-footer {
+  position: static !important;
+  top: auto !important;
+  width: 100%;
+  margin: 12px 0 0 !important;
+}
+
+@media (max-width: 1180px) {
+  body:has(.hero-text) .hero-text {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(900px, calc(100% - 40px));
+    margin-top: 0;
+    margin-bottom: -390px;
+    transform: translateY(-390px);
+  }
+
+  body:has(.hero-text) .card,
+  body:has(.hero-text) .card1,
+  body:has(.hero-text) .card2,
+  body:has(.hero-text) .card3,
+  body:has(.hero-text) .card4,
+  body:has(.hero-text) .card5,
+  body:has(.hero-text) .card6,
+  body:has(.hero-text) .card7,
+  body:has(.hero-text) .card8 {
+    height: 580px;
+  }
+
+  body:has(.hero-text) .icon,
+  body:has(.hero-text) .icon1,
+  body:has(.hero-text) .icon2,
+  body:has(.hero-text) .icon3,
+  body:has(.hero-text) .icon4,
+  body:has(.hero-text) .icon5,
+  body:has(.hero-text) .icon6,
+  body:has(.hero-text) .icon7,
+  body:has(.hero-text) .icon8 {
+    bottom: 195px;
+  }
+
+  body:has(.hero-image) .h1 {
+    top: -220px;
+  }
+
+  body:has(.hero-image) .deti,
+  body:has(.hero-image) .ft,
+  body:has(.hero-image) .lon {
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    width: min(90%, 650px);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body:has(.hero-image) .lon {
+    margin-top: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-effects-ready .site-reveal {
+    transition-duration: 0.48s;
+  }
+
+  .site-effects-ready .site-reveal--up {
+    transform: translateY(14px);
+  }
+
+  .site-effects-ready .site-reveal--zoom {
+    transform: translateY(10px) scale(0.985);
+  }
+
+  header {
+    align-items: center;
+  }
+
+  #Makarone.active {
+    z-index: 10001;
+  }
+
+  .language-switcher {
+    width: 100%;
+    margin: 4px 0 0;
+    flex-wrap: wrap;
+  }
+
+  .language-option {
+    flex: 1 1 130px;
+    min-height: 38px;
+  }
+
+  body:has(.hero-text) > div:first-of-type {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  body:has(.hero-text) .ss {
+    display: none;
+    float: none;
+  }
+
+  body:has(.hero-text) > div:first-of-type img {
+    height: 520px !important;
+  }
+
+  body:has(.hero-text) .hero-text {
+    grid-template-columns: 1fr;
+    width: calc(100% - 32px);
+    margin-top: 0;
+    margin-bottom: -360px;
+    transform: translateY(-360px);
+  }
+
+  body:has(.hero-text) .london {
+    font-size: clamp(54px, 11vw, 78px);
+  }
+
+  body:has(.hero-text) .summer {
+    font-size: clamp(48px, 10vw, 70px);
+  }
+
+  body:has(.hero-text) .tagline {
+    margin-bottom: 82px;
+  }
+
+  body:has(.hero-text) .card,
+  body:has(.hero-text) .card1,
+  body:has(.hero-text) .card2,
+  body:has(.hero-text) .card3,
+  body:has(.hero-text) .card4,
+  body:has(.hero-text) .card5,
+  body:has(.hero-text) .card6,
+  body:has(.hero-text) .card7,
+  body:has(.hero-text) .card8 {
+    height: 540px;
+  }
+
+  body:has(.hero-text) .icon,
+  body:has(.hero-text) .icon1,
+  body:has(.hero-text) .icon2,
+  body:has(.hero-text) .icon3,
+  body:has(.hero-text) .icon4,
+  body:has(.hero-text) .icon5,
+  body:has(.hero-text) .icon6,
+  body:has(.hero-text) .icon7,
+  body:has(.hero-text) .icon8 {
+    bottom: 185px;
+  }
+
+  body:has(.hero-image) .hours {
+    width: calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+
+  body:has(.hero-image) .location-map-button {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  body:has(.hero-image) .best h1 {
+    font-size: clamp(36px, 14vw, 54px) !important;
+    line-height: 0.96;
+  }
+
+  body:has(.hero-image) .best h2 {
+    font-size: clamp(24px, 8vw, 32px) !important;
+  }
+
+  body:has(.hero-text) .london {
+    font-size: clamp(42px, 16vw, 58px);
+  }
+
+  body:has(.hero-text) .summer {
+    font-size: clamp(38px, 15vw, 54px);
+  }
+
+  body:has(.hero-text) .tagline {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 76px;
+  }
+
+  body:has(.hero-text) .card,
+  body:has(.hero-text) .card1,
+  body:has(.hero-text) .card2,
+  body:has(.hero-text) .card3,
+  body:has(.hero-text) .card4,
+  body:has(.hero-text) .card5,
+  body:has(.hero-text) .card6,
+  body:has(.hero-text) .card7,
+  body:has(.hero-text) .card8 {
+    height: 500px;
+  }
+
+  body:has(.hero-text) .icon,
+  body:has(.hero-text) .icon1,
+  body:has(.hero-text) .icon2,
+  body:has(.hero-text) .icon3,
+  body:has(.hero-text) .icon4,
+  body:has(.hero-text) .icon5,
+  body:has(.hero-text) .icon6,
+  body:has(.hero-text) .icon7,
+  body:has(.hero-text) .icon8 {
+    bottom: 190px;
+  }
+
+  body:has(.hero-image) .watch-btn {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .site-effects-ready .site-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
